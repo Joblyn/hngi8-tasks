@@ -26,7 +26,6 @@ html, body {
   position: absolute;
   left: -150%;
   animation: disappear 3.5s ease-in-out 0s;
-  display: none;
 }
 
 @keyframes disappear {
@@ -120,31 +119,20 @@ a {
 #resume {
   background-color: #fff;
   color: #2079c7;
-  animation: show .5s linear 3.5s;
-  display: flex;
+  display: none;
   flex-direction: row;
-}
-
-@keyframes show {
-  0% {
-    display: none;
-  }
-  100% {
-    display: block;
-  }
+  transition: display 1s ease-in-out;
 }
 
 .resume-header {
   position: fixed;
   top: 0;
-  /* background-color: #fff; */
 }
 
 .resume-header nav div:nth-of-type(2) {
   margin-left: auto;
 }
 
-;
 @media screen and (min-width: 600px) {
   .resume-header nav div a img {
     width: 100px;
