@@ -1,5 +1,5 @@
-function printHelloWorld () {
+function printMyName () {
   document.write('<h1>Job Oaikhenah</>');
 }
 
-document.onload = printHelloWorld();
+document.onload = printMyName();
