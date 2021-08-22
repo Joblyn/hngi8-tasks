@@ -165,6 +165,10 @@ a {
   width: 65vw;
 }
 
+#mobile-nav {
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
   #resume {
     flex-direction: column-reverse;
@@ -172,11 +176,26 @@ a {
   .resume-header {
     transition: all .2s ease-in-out;
   }
-  .resume-header nav div:nth-of-type(2) span {
+  /* .resume-header nav div:nth-of-type(2) span {
     font-size: 2.2rem;
     margin-right: 1rem;
     touch-action: manipulation;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  } */
+  .resume-header nav .img-cont{
+    display: none;
+  }
+  #mobile-nav img {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8rem;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
   }
   #side-bar {
     width: 100vw;
@@ -196,7 +215,9 @@ a {
     background-color: #2079c7;
     color: #fff;
   }
+
   #mobile-nav {
+    display: block;
     background-color: transparent;
     height: 65px;
     position: fixed;
@@ -242,7 +263,7 @@ a {
   #menuToggle input:checked~span {
     opacity: 1;
     transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
+    background: #2079c7;
   }
   #menuToggle input:checked~span:nth-last-child(3) {
     opacity: 0;
