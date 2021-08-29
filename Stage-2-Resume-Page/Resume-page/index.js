@@ -17,7 +17,6 @@ function changeHeaderBackgroundOnMobile(x) {
           "box-shadow": "0px 0.1px 10px 0.5px rgb(0 0 0 / 50%)"
         });
       } else {
-        //remove the background property so it comes transparent again (defined in your css)
         $(".resume-header").css({
           "background-color": "#fff",
           "box-shadow": "none"
